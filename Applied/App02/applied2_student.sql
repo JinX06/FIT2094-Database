@@ -2,9 +2,9 @@
 Databases Applied 2
 applied2_student.sql
 
-student id:
-student name:
-last modified date:
+student id: 34076352
+student name: Ong Jin Xiang
+last modified date: 11/03/2025
 
 */
 
