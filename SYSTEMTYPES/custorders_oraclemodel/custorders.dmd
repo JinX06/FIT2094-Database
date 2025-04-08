@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="custorders" id="53575019-9E9A-58EF-37E4-AF77D44B2EC0" version="3.5">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 01:34:20 UTC</createdTime>
+<ownerDesignName>custorders</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>53575019-9E9A-58EF-37E4-AF77D44B2EC0</designId>
+</OSDM_Design>
