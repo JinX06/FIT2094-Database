@@ -1,0 +1,296 @@
+SQL> 
+SQL> --student id: 34076352
+SQL> --student name: Ong Jin Xiang
+SQL> 
+SQL> DROP TABLE CUSTOMER CASCADE CONSTRAINTS 
+  2  ;
+
+Error starting at line : 13 in command -
+DROP TABLE CUSTOMER CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+
+https://docs.oracle.com/error-help/db/ora-00942/00942. 00000 -  "table or view%s does not exist"
+*Cause:    The specified table or view did not exist, or a synonym
+           pointed to a table or view that did not exist.
+           To find existing user tables and views, query the
+           ALL_TABLES and ALL_VIEWS data dictionary views. Certain
+           privileges may be required to access the table. If an
+           application returned this message, then the table that the
+           application tried to access did not exist in the database, or
+           the application did not have access to it.
+*Action:   Check each of the following
+           - The spelling of the table or view name is correct.
+           - The referenced table or view name does exist.
+           - The synonym points to an existing table or view.
+SQL> 
+SQL> DROP TABLE "ORDER" CASCADE CONSTRAINTS 
+  2  ;
+
+Error starting at line : 16 in command -
+DROP TABLE "ORDER" CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+
+https://docs.oracle.com/error-help/db/ora-00942/00942. 00000 -  "table or view%s does not exist"
+*Cause:    The specified table or view did not exist, or a synonym
+           pointed to a table or view that did not exist.
+           To find existing user tables and views, query the
+           ALL_TABLES and ALL_VIEWS data dictionary views. Certain
+           privileges may be required to access the table. If an
+           application returned this message, then the table that the
+           application tried to access did not exist in the database, or
+           the application did not have access to it.
+*Action:   Check each of the following
+           - The spelling of the table or view name is correct.
+           - The referenced table or view name does exist.
+           - The synonym points to an existing table or view.
+SQL> 
+SQL> DROP TABLE ORDERLINE CASCADE CONSTRAINTS 
+  2  ;
+
+Error starting at line : 19 in command -
+DROP TABLE ORDERLINE CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+
+https://docs.oracle.com/error-help/db/ora-00942/00942. 00000 -  "table or view%s does not exist"
+*Cause:    The specified table or view did not exist, or a synonym
+           pointed to a table or view that did not exist.
+           To find existing user tables and views, query the
+           ALL_TABLES and ALL_VIEWS data dictionary views. Certain
+           privileges may be required to access the table. If an
+           application returned this message, then the table that the
+           application tried to access did not exist in the database, or
+           the application did not have access to it.
+*Action:   Check each of the following
+           - The spelling of the table or view name is correct.
+           - The referenced table or view name does exist.
+           - The synonym points to an existing table or view.
+SQL> 
+SQL> DROP TABLE PROD_CATEGORY CASCADE CONSTRAINTS 
+  2  ;
+
+Error starting at line : 22 in command -
+DROP TABLE PROD_CATEGORY CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+
+https://docs.oracle.com/error-help/db/ora-00942/00942. 00000 -  "table or view%s does not exist"
+*Cause:    The specified table or view did not exist, or a synonym
+           pointed to a table or view that did not exist.
+           To find existing user tables and views, query the
+           ALL_TABLES and ALL_VIEWS data dictionary views. Certain
+           privileges may be required to access the table. If an
+           application returned this message, then the table that the
+           application tried to access did not exist in the database, or
+           the application did not have access to it.
+*Action:   Check each of the following
+           - The spelling of the table or view name is correct.
+           - The referenced table or view name does exist.
+           - The synonym points to an existing table or view.
+SQL> 
+SQL> DROP TABLE PRODUCT CASCADE CONSTRAINTS 
+  2  ;
+
+Error starting at line : 25 in command -
+DROP TABLE PRODUCT CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+
+https://docs.oracle.com/error-help/db/ora-00942/00942. 00000 -  "table or view%s does not exist"
+*Cause:    The specified table or view did not exist, or a synonym
+           pointed to a table or view that did not exist.
+           To find existing user tables and views, query the
+           ALL_TABLES and ALL_VIEWS data dictionary views. Certain
+           privileges may be required to access the table. If an
+           application returned this message, then the table that the
+           application tried to access did not exist in the database, or
+           the application did not have access to it.
+*Action:   Check each of the following
+           - The spelling of the table or view name is correct.
+           - The referenced table or view name does exist.
+           - The synonym points to an existing table or view.
+SQL> 
+SQL> -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+SQL> 
+SQL> -- predefined type, no DDL - XMLTYPE
+SQL> 
+SQL> CREATE TABLE CUSTOMER 
+  2      ( 
+  3       cust_no      NUMBER (7)  NOT NULL , 
+  4       cust_name    VARCHAR2 (50)  NOT NULL , 
+  5       cust_address VARCHAR2 (50)  NOT NULL , 
+  6       cust_phone   CHAR (10) , 
+  7       cust_level   CHAR (1)  NOT NULL 
+  8      ) 
+  9  ;
+
+Table CUSTOMER created.
+
+SQL> 
+SQL> ALTER TABLE CUSTOMER 
+  2      ADD CONSTRAINT chk_custlevel 
+  3      CHECK (cust_level IN ('B', 'G', 'S')) 
+  4  ;
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> ALTER TABLE CUSTOMER 
+  2      ADD CONSTRAINT CUSTOMER_PK PRIMARY KEY ( cust_no ) ;
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> CREATE TABLE "ORDER" 
+  2      ( 
+  3       order_no   NUMBER (7)  NOT NULL , 
+  4       order_date DATE  NOT NULL , 
+  5       cust_no    NUMBER (7)  NOT NULL 
+  6      ) 
+  7  ;
+
+Table "ORDER" created.
+
+SQL> 
+SQL> ALTER TABLE "ORDER" 
+  2      ADD CONSTRAINT ORDERS_PK PRIMARY KEY ( order_no ) ;
+
+Table "ORDER" altered.
+
+SQL> 
+SQL> CREATE TABLE ORDERLINE 
+  2      ( 
+  3       ol_qtyordered NUMBER (3)  NOT NULL , 
+  4       ol_lineprice  NUMBER (8,2)  NOT NULL , 
+  5       order_no      NUMBER (7)  NOT NULL , 
+  6       prod_no       NUMBER (7)  NOT NULL , 
+  7       ol_id         NUMBER (7)  NOT NULL 
+  8      ) 
+  9  ;
+
+Table ORDERLINE created.
+
+SQL> 
+SQL> COMMENT ON COLUMN ORDERLINE.ol_id IS 'surrogate key' 
+  2  ;
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT ORDERLINE_PK PRIMARY KEY ( ol_id ) ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT orderline_nk UNIQUE ( prod_no , order_no ) ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT ol_qty UNIQUE ( ol_qtyordered ) ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT ol_price UNIQUE ( ol_lineprice ) ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE TABLE PROD_CATEGORY 
+  2      ( 
+  3       pcat_id   NUMBER (4)  NOT NULL , 
+  4       pcat_name VARCHAR2 (50)  NOT NULL , 
+  5       prod_no   NUMBER (7)  NOT NULL 
+  6      ) 
+  7  ;
+
+Table PROD_CATEGORY created.
+
+SQL> 
+SQL> ALTER TABLE PROD_CATEGORY 
+  2      ADD CONSTRAINT PROD_CATEGORY_PK PRIMARY KEY ( pcat_id ) ;
+
+Table PROD_CATEGORY altered.
+
+SQL> 
+SQL> CREATE TABLE PRODUCT 
+  2      ( 
+  3       prod_no        NUMBER (7)  NOT NULL , 
+  4       prod_desc      VARCHAR2 (50)  NOT NULL , 
+  5       prod_unitprice NUMBER (7,2)  NOT NULL 
+  6      ) 
+  7  ;
+
+Table PRODUCT created.
+
+SQL> 
+SQL> ALTER TABLE PRODUCT 
+  2      ADD CONSTRAINT PRODUCT_PK PRIMARY KEY ( prod_no ) ;
+
+Table PRODUCT altered.
+
+SQL> 
+SQL> ALTER TABLE "ORDER" 
+  2      ADD CONSTRAINT cust_orders_fk FOREIGN KEY 
+  3      ( 
+  4       cust_no
+  5      ) 
+  6      REFERENCES CUSTOMER 
+  7      ( 
+  8       cust_no
+  9      ) 
+ 10  ;
+
+Table "ORDER" altered.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT order_no_fk FOREIGN KEY 
+  3      ( 
+  4       order_no
+  5      ) 
+  6      REFERENCES "ORDER" 
+  7      ( 
+  8       order_no
+  9      ) 
+ 10  ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE PROD_CATEGORY 
+  2      ADD CONSTRAINT pcat_id_fk FOREIGN KEY 
+  3      ( 
+  4       prod_no
+  5      ) 
+  6      REFERENCES PRODUCT 
+  7      ( 
+  8       prod_no
+  9      ) 
+ 10  ;
+
+Table PROD_CATEGORY altered.
+
+SQL> 
+SQL> ALTER TABLE ORDERLINE 
+  2      ADD CONSTRAINT prod_no_fk FOREIGN KEY 
+  3      ( 
+  4       prod_no
+  5      ) 
+  6      REFERENCES PRODUCT 
+  7      ( 
+  8       prod_no
+  9      ) 
+ 10  ;
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> SPOOL off

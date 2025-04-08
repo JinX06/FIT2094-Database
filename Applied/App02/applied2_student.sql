@@ -189,3 +189,6 @@ INSERT INTO student (
 );
 
 COMMIT;
+
+SPOOL off
+set echo off

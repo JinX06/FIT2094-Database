@@ -1,0 +1,243 @@
+SQL> 
+SQL> --student id: 12345678
+SQL> --student name: Firstname Lastname
+SQL> DROP TABLE student CASCADE CONSTRAINTS;
+
+Table STUDENT dropped.
+
+SQL> 
+SQL> CREATE TABLE student (
+  2      studid      NUMBER(8) NOT NULL,
+  3      studfname   VARCHAR2(20) NOT NULL,
+  4      studlname   VARCHAR2(20) NOT NULL,
+  5      studdob     DATE NOT NULL,
+  6      studaddress VARCHAR2(100) NOT NULL,
+  7      studphone   CHAR(15) NOT NULL,
+  8      studemail   VARCHAR2(50) NOT NULL
+  9  );
+
+Table STUDENT created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studid IS
+  2      'Student Identifier';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studfname IS
+  2      'Student first name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studlname IS
+  2      'Student last name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studdob IS
+  2      'Student date of birth';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studaddress IS
+  2      'Student address';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studphone IS
+  2      'Student contact phone number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN student.studemail IS
+  2      'Student email';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE student ADD CONSTRAINT student_pk PRIMARY KEY ( studid );
+
+Table STUDENT altered.
+
+SQL> 
+SQL> --Populate table insert
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      12489379,
+ 11      'Gilberto',
+ 12      'Bwy',
+ 13      TO_DATE('30-Aug-1992', 'dd-Mon-yyyy'),
+ 14      '5664 Loomis Parkway, Melbourne',
+ 15      '7037621034',
+ 16      'Gilberto.Bwy@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      12511467,
+ 11      'Francyne',
+ 12      'Rigney',
+ 13      TO_DATE('18-Jan-1992', 'dd-Mon-yyyy'),
+ 14      '75 Buhler Street, Mulgrave',
+ 15      '6994152403',
+ 16      'Francyne.Rigney@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      12609485,
+ 11      'Cassondra',
+ 12      'Sedcole',
+ 13      TO_DATE('07-Aug-1990', 'dd-Mon-yyyy'),
+ 14      '6507 Tennessee Alley, Melbourne',
+ 15      '8343944500',
+ 16      'Cassondra.Sedcole@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      12802225,
+ 11      'Friedrick',
+ 12      'Geist',
+ 13      TO_DATE('02-Mar-1997', 'dd-Mon-yyyy'),
+ 14      '99271 Eliot Pass, Dingley',
+ 15      '6787553656',
+ 16      'Friedrick.Geist@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      12842838,
+ 11      'Herminia',
+ 12      'Mendus',
+ 13      TO_DATE('25-Apr-1996', 'dd-Mon-yyyy'),
+ 14      '64186 East Lane, Moorabbin',
+ 15      '4896374903',
+ 16      'Herminia.Mendus@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      13028303,
+ 11      'Herculie',
+ 12      'Mendus',
+ 13      TO_DATE('02-Aug-1998', 'dd-Mon-yyyy'),
+ 14      '44 Becker Street, Mulgrave',
+ 15      '2309618710',
+ 16      'Herculie.Mendus@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      13119134,
+ 11      'Shandra',
+ 12      'Lindblom',
+ 13      TO_DATE('20-Apr-2000', 'dd-Mon-yyyy'),
+ 14      '9241 Rieder Parkway, Chelsea',
+ 15      '4384142213',
+ 16      'Shandra.Lindblom@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student (
+  2      studid,
+  3      studfname,
+  4      studlname,
+  5      studdob,
+  6      studaddress,
+  7      studphone,
+  8      studemail
+  9  ) VALUES (
+ 10      13390148,
+ 11      'Brier',
+ 12      'Kilgour',
+ 13      TO_DATE('21-Feb-1995', 'dd-Mon-yyyy'),
+ 14      '79776 Dryden Plaza, Moorabbin',
+ 15      '6981280319',
+ 16      'Brier.Kilgour@student.monash.edu'
+ 17  );
+
+1 row inserted.
+
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SPOOL off
