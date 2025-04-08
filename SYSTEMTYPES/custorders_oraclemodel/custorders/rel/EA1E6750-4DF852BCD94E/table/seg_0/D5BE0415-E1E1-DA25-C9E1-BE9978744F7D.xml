@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5BE0415-E1E1-DA25-C9E1-BE9978744F7D" name="PRODUCT">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>12EF577D-EE3F-024E-D90B-3A5A0B5AEE25</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prod_no" id="814555BB-9428-694D-0390-7ABE60272992">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>72B58BA0-B073-7F6B-2672-2E987167CC9B</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prod_desc" id="D59C61CD-B1E2-A674-6329-44880CB8269B">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>5D14C980-D005-6C33-F678-BBC0D4A74C7C</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prod_unitprice" id="3A999BDF-1B0F-CC3D-A609-8D8AE7E26301">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>208CFA6B-A09B-D615-ADEA-9C4CABF99833</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44266503-1481-71CD-5010-96FA082077E6" name="PRODUCT_PK">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>D87C5C78-4C8F-B0D3-FF14-8BCB1A820B18</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="814555BB-9428-694D-0390-7ABE60272992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

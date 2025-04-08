@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FADF516A-56B7-78A0-B3D2-36A1CC3B0B54" name="CUSTOMER">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>F095E82D-BBE9-92BB-F793-CA0DFC44AA4A</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_no" id="15FEA507-3B51-BD1A-83B6-5C20FDCBC4E3">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>607A1D71-8196-1542-5D16-2F6318E95369</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_name" id="0901547E-5A7C-E4B1-7845-87C413B65848">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>C3C6860E-6830-3919-C990-FD841B352EA9</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_address" id="5D804C7D-B246-AAF9-73C9-9533828F59BB">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>C9B6F5BC-458F-3B97-62B6-2ED2ADD3EC40</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_phone" id="ED75AF30-02E8-26DE-4214-5FA2CAB9304B">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>85CD631E-09B9-91E9-1AB6-C4150A78C8A2</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_level" id="34889DB7-9339-4436-3F01-D3F6CAB7A90C">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>70AAC069-2563-B66F-B4CA-436EDF1C1BDD</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<constraintName>chk_custlevel</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D078378-5A6E-B873-53CF-26497EE675DE" name="CUSTOMER_PK">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:43:04 UTC</createdTime>
+<generatorID>602BBABF-4A1E-56C1-4B4E-C7E15F971DEF</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15FEA507-3B51-BD1A-83B6-5C20FDCBC4E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

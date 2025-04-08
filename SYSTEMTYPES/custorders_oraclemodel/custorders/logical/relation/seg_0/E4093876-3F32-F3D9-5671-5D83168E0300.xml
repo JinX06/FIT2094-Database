@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pcat_id_fk" directorySegmentName="seg_0" id="E4093876-3F32-F3D9-5671-5D83168E0300">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:37:44 UTC</createdTime>
+<ownerDesignName>custorders</ownerDesignName>
+<engineerTo>
+<item key="EA1E6750-98B4-7392-DF90-4DF852BCD94E" value="true"/>
+</engineerTo>
+<sourcePk>5E2BD97D-098C-13DE-A3B0-48825EAFD396</sourcePk>
+<targetPk>D87C5C78-4C8F-B0D3-FF14-8BCB1A820B18</targetPk>
+<identifying>false</identifying>
+<nameOnSource>categorises</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>BFCA743E-7496-BAC2-3E23-56A914D43237</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>12EF577D-EE3F-024E-D90B-3A5A0B5AEE25</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -41,6 +41,21 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="prod_no" id="D62331C1-BD57-EBD0-99A5-967135E8A92B">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-08 02:38:10 UTC</createdTime>
+<generatorID>E4093876-3F32-F3D9-5671-5D83168E0300</generatorID>
+<ownerDesignName>custorders</ownerDesignName>
+<engineerTo>
+<item key="EA1E6750-98B4-7392-DF90-4DF852BCD94E" value="true"/>
+</engineerTo>
+<referedAttribute>72B58BA0-B073-7F6B-2672-2E987167CC9B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5E2BD97D-098C-13DE-A3B0-48825EAFD396" name="PROD_CATEGORY PK">

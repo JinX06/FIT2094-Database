@@ -75,10 +75,16 @@
 <engineerTo>
 <item key="EA1E6750-98B4-7392-DF90-4DF852BCD94E" value="true"/>
 </engineerTo>
+<constraintName>chk_custlevel</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
