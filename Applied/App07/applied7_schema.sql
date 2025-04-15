@@ -1,5 +1,5 @@
-set echo on
-spool applied7_schema_output.txt
+-- set echo on
+-- spool applied7_schema_output.txt
 /*
 Databases Applied 7
 applied7_schema.sql
@@ -18,6 +18,7 @@ last modified date: 15 Apr 2025
 --
 drop TABLE enrollment PURGE;
 drop TABLE student PURGE;
+drop TABLE course_unit PURGE;
 drop TABLE unit PURGE;
 DROP TABLE COURSE PURGE;
 
