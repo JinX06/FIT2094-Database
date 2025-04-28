@@ -18,6 +18,7 @@
 <Attribute name="cruise_id" id="A3DA7419-33FA-BFE3-951B-3BA0971C1E97">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:24:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise unique identifier (candidate key)]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
@@ -31,6 +32,7 @@
 <Attribute name="passenger_id" id="4B3CD72F-8B3A-A8E8-9CEF-5F92D31FF7AB">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:32:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger unique identifier (candidate key)]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>

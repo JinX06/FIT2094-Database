@@ -15,16 +15,31 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ci_id" id="93042646-5057-1AF8-527D-79DE6298F052">
+<Attribute name="cruise_id" id="B4FB8D75-A243-102B-8CB8-188ED37B453C">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-28 22:21:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique Cruise itinerary identifier (Surrogate PK)]]></commentInRDBMS>
+<createdTime>2025-04-28 22:45:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise unique identifier (candidate key)]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ci_datetime" id="D6AF3494-B527-4904-7DD2-3AFB9D30138F">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:48:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise itinerary date time (candidate key)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -38,7 +53,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>93042646-5057-1AF8-527D-79DE6298F052</attributeRef>
+<attributeRef>B4FB8D75-A243-102B-8CB8-188ED37B453C</attributeRef>
+<attributeRef>D6AF3494-B527-4904-7DD2-3AFB9D30138F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

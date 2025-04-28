@@ -18,7 +18,21 @@
 <Attribute name="cabin_id" id="61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:08:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cabin unique identifier]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Cabin unique identifier (candidate key)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_id" id="3C34C753-0293-8FAF-B6F8-C2D43862230E">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:51:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship unique identifier (candidate key)]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
@@ -41,6 +55,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5</attributeRef>
+<attributeRef>3C34C753-0293-8FAF-B6F8-C2D43862230E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
