@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54ACAD8F-51D0-2C3F-C102-6E9EFC1B11F1" name="MANIFEST">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:24:29 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cruise_id" id="A3DA7419-33FA-BFE3-951B-3BA0971C1E97">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:24:35 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_id" id="4B3CD72F-8B3A-A8E8-9CEF-5F92D31FF7AB">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:32:37 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="64F88D38-E26F-A882-7AFA-D347C86CCF2E" name="MANIFEST PK">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:32:35 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3DA7419-33FA-BFE3-951B-3BA0971C1E97</attributeRef>
+<attributeRef>4B3CD72F-8B3A-A8E8-9CEF-5F92D31FF7AB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

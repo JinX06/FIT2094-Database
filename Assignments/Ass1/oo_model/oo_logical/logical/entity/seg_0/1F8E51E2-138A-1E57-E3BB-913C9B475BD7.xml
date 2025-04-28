@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F8E51E2-138A-1E57-E3BB-913C9B475BD7" name="CABIN">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:08:07 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cabin_id" id="61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:08:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin unique identifier]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00AA1CAA-A4FB-CD0A-2097-2A0BDFEE06A5" name="CABIN PK">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-28 22:08:26 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
