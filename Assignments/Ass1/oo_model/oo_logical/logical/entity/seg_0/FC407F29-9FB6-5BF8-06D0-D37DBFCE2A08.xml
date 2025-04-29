@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="passenger_id" id="74DF67EE-E798-CB08-029C-E4411D7FCBC6">
+<Attribute name="pass_id" id="74DF67EE-E798-CB08-029C-E4411D7FCBC6">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:15:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique identifier for passenger]]></commentInRDBMS>
@@ -43,9 +43,69 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_first_name" id="A9A94AC9-65BE-91E6-4DF1-8A9532DE3A93">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:17:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's first name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_last_name" id="A518CAFA-1C5D-9110-1407-BF13F47BD708">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:19:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's last name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_gender" id="DEDE09DB-3443-C729-BB19-093FD8E973C6">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:21:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger gender (M = Male, F = Female, O = Other)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+<valueDef value="O" description="Other"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_date_of_birth" id="B184F7BB-F012-5E30-D4A3-17227B24A517">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:24:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's date of birth]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="guardian_id" id="8ABB8026-5981-B0D7-64E3-3ECA8AB7E4FA">
+<Attribute name="guardian_pass_id" id="8ABB8026-5981-B0D7-64E3-3ECA8AB7E4FA">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-29 13:26:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique identifier for passenger]]></commentInRDBMS>
@@ -61,6 +121,21 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_phone" id="852B364B-B439-494B-9379-A5A75E88E1F2">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:20:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger phone number (blank for minors)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -29,6 +29,20 @@
 <dataTypeSize>2</dataTypeSize>
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="country_name" id="13B99E00-34C8-A5AF-C4A0-D19B8B581DAF">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:29:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Full name of the country]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7EB83CB1-FC6C-8954-69AF-24B7B71C9F6F" name="COUNTRY PK">

@@ -29,7 +29,7 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="operator_id" id="510F6A64-0AC3-5AB1-555F-CB77A7E401D5">
+<Attribute name="op_id" id="510F6A64-0AC3-5AB1-555F-CB77A7E401D5">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-29 12:17:33 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique ID for each Operator]]></commentInRDBMS>
@@ -44,6 +44,76 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_name" id="075CF3B3-BD0A-79AE-0FF7-CE7080831832">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 21:57:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Full name of the ship]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_commissioned_date" id="4870EC6D-2101-F1F1-E7EB-EC6AE8570979">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 21:57:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date the ship was commisioned]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_tonnage" id="DF40D23A-92CC-78CF-561F-C42048CB69E1">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 21:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total tonnage of the ship]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_max_capacity" id="0A35DB15-EFBD-57D3-3FC4-5A8D5535EFAE">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 21:59:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximum number of guests on the ship]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_registered_country" id="0A5F8ADD-6AF5-9110-D847-F63A04FF14F8">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:01:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country where the ship is registered in]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

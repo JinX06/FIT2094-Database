@@ -45,6 +45,47 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cruise_depart_datetime" id="4CCE75AE-2176-034A-C07A-F7A634BE5EDE">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:14:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date and time of cruise departure]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_name" id="93F53DE8-16F5-7FCA-5D19-33C90B29E18A">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:15:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of the cruise]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_desc" id="0475D0EB-D31A-062C-879A-E396551206EF">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 22:15:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description of the cruise]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4DE6645A-473A-F5BB-C062-2DB47324068D" name="CRUISE PK">
