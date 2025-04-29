@@ -42,7 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="port_id" id="75D348DF-56D1-EB00-4B22-CBF6D9D3E7EA">
 <createdBy>jinx</createdBy>
@@ -74,7 +74,6 @@
 <usedAttributes>
 <attributeRef>D6AF3494-B527-4904-7DD2-3AFB9D30138F</attributeRef>
 <attributeRef>19FC06ED-032F-32E9-5190-8262F2B4E16C</attributeRef>
-<attributeRef>75D348DF-56D1-EB00-4B22-CBF6D9D3E7EA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

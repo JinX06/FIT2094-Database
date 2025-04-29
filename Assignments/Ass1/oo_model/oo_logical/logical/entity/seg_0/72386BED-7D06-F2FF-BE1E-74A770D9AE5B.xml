@@ -29,6 +29,22 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ship_id" id="57386134-CD3B-19C4-36D9-4215E43923B0">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 14:58:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship unique identifier]]></commentInRDBMS>
+<generatorID>43E63870-759E-ACA3-62A3-929411758FC8</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>22118D1E-674F-8E2B-95A0-633B3F8D78AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4DE6645A-473A-F5BB-C062-2DB47324068D" name="CRUISE PK">

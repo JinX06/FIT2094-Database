@@ -45,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cabin_id" id="094642ED-2573-D459-E348-0CEF9856A3EA">
 <createdBy>jinx</createdBy>
@@ -57,6 +57,22 @@
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
 <referedAttribute>61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_id" id="640A9251-E9AD-6BC4-FAB2-4CA09166FE15">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 14:58:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship unique identifier]]></commentInRDBMS>
+<generatorID>EF779A4A-B850-4BDE-8683-EFF1761031A8</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>EB1E6D22-68AD-2E0B-5AC1-EA49819A3D66</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
