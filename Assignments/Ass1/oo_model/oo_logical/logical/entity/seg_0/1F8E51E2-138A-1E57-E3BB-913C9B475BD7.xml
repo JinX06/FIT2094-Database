@@ -29,19 +29,21 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ship_id" id="3C34C753-0293-8FAF-B6F8-C2D43862230E">
+<Attribute name="ship_id" id="EB1E6D22-68AD-2E0B-5AC1-EA49819A3D66">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-28 22:51:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Ship unique identifier (candidate key)]]></commentInRDBMS>
+<createdTime>2025-04-29 12:51:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship unique identifier]]></commentInRDBMS>
+<generatorID>C6E07F85-54E7-02C3-2396-1F737282681E</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
+<referedAttribute>22118D1E-674F-8E2B-95A0-633B3F8D78AD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -55,7 +57,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5</attributeRef>
-<attributeRef>3C34C753-0293-8FAF-B6F8-C2D43862230E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

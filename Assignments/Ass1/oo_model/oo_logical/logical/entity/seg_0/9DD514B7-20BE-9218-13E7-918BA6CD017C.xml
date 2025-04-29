@@ -29,6 +29,22 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="operator_id" id="510F6A64-0AC3-5AB1-555F-CB77A7E401D5">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 12:17:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for each Operator]]></commentInRDBMS>
+<generatorID>6E7D52A1-CF19-6261-1E93-BCBD01131AE0</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>C27700DB-16F9-B5F7-6D30-B9836A402A47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="ECE3A720-9208-1DCE-0ED5-5123C2144F4C" name="SHIP PK">

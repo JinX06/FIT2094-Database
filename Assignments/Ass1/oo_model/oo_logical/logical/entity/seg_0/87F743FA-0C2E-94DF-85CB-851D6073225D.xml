@@ -30,6 +30,22 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="country_id" id="8928B435-6CA4-2449-8479-6A686604FB4F">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:24:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique country identifier]]></commentInRDBMS>
+<generatorID>87D0D0FD-5AE3-375E-3CDE-B64E645ED7AF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>5200FC83-0B7F-CE65-475A-FCE6977312CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CA2127C1-296B-2B14-6172-E29F0883BF26" name="PORT PK">

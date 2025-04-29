@@ -15,20 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="cruise_id" id="B4FB8D75-A243-102B-8CB8-188ED37B453C">
-<createdBy>jinx</createdBy>
-<createdTime>2025-04-28 22:45:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cruise unique identifier (candidate key)]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ci_datetime" id="D6AF3494-B527-4904-7DD2-3AFB9D30138F">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:48:15 UTC</createdTime>
@@ -42,6 +28,39 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cruise_id" id="19FC06ED-032F-32E9-5190-8262F2B4E16C">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:11:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique cruise identifier]]></commentInRDBMS>
+<generatorID>F56A4FD3-7C48-0C9E-1192-D6B67D0633B1</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>38873D6B-B931-AC4F-D8E0-F6E9E01B1703</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="port_id" id="75D348DF-56D1-EB00-4B22-CBF6D9D3E7EA">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:16:46 UTC</createdTime>
+<comment><![CDATA[Unique identifier for ports]]></comment>
+<commentInRDBMS><![CDATA[Unique port identifier]]></commentInRDBMS>
+<generatorID>72FFDF41-DAF9-8161-EFA2-06498DA56835</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>A850B7FA-D175-3513-457E-716939F3636C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="961A5E4D-BBE7-E093-8B2B-66E89012ED6D" name="CRUISE_ITINERARY PK">
@@ -53,8 +72,9 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B4FB8D75-A243-102B-8CB8-188ED37B453C</attributeRef>
 <attributeRef>D6AF3494-B527-4904-7DD2-3AFB9D30138F</attributeRef>
+<attributeRef>19FC06ED-032F-32E9-5190-8262F2B4E16C</attributeRef>
+<attributeRef>75D348DF-56D1-EB00-4B22-CBF6D9D3E7EA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

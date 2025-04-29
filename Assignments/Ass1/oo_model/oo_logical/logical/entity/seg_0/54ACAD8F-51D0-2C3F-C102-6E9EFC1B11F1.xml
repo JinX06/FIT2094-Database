@@ -15,33 +15,53 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="cruise_id" id="A3DA7419-33FA-BFE3-951B-3BA0971C1E97">
+<Attribute name="passenger_id" id="96DB0C7A-1375-D8AF-4D9F-D6C2F9E8FEF9">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-28 22:24:35 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cruise unique identifier (candidate key)]]></commentInRDBMS>
+<createdTime>2025-04-29 12:59:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for passenger]]></commentInRDBMS>
+<generatorID>714697FB-F982-DD73-3F09-486CA37A8431</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
+<referedAttribute>74DF67EE-E798-CB08-029C-E4411D7FCBC6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="passenger_id" id="4B3CD72F-8B3A-A8E8-9CEF-5F92D31FF7AB">
+<Attribute name="cruise_id" id="F716D21D-313E-0F85-4058-70AAC83364BA">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-28 22:32:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger unique identifier (candidate key)]]></commentInRDBMS>
+<createdTime>2025-04-29 13:00:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique cruise identifier]]></commentInRDBMS>
+<generatorID>81558C8F-0EFF-470E-B1BC-B21522118CB0</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
+<referedAttribute>38873D6B-B931-AC4F-D8E0-F6E9E01B1703</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cabin_id" id="094642ED-2573-D459-E348-0CEF9856A3EA">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 12:57:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin unique identifier (candidate key)]]></commentInRDBMS>
+<generatorID>EF779A4A-B850-4BDE-8683-EFF1761031A8</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>61D2F8C7-6FB7-16C1-A4AE-B5637947C3B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -54,8 +74,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>A3DA7419-33FA-BFE3-951B-3BA0971C1E97</attributeRef>
-<attributeRef>4B3CD72F-8B3A-A8E8-9CEF-5F92D31FF7AB</attributeRef>
+<attributeRef>96DB0C7A-1375-D8AF-4D9F-D6C2F9E8FEF9</attributeRef>
+<attributeRef>F716D21D-313E-0F85-4058-70AAC83364BA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

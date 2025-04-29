@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="passenger_id_fk" directorySegmentName="seg_0" id="714697FB-F982-DD73-3F09-486CA37A8431">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 12:59:52 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<sourcePk>36FB0A0C-92BB-6EEB-2638-4B6BAB8C8827</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC407F29-9FB6-5BF8-06D0-D37DBFCE2A08</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>54ACAD8F-51D0-2C3F-C102-6E9EFC1B11F1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

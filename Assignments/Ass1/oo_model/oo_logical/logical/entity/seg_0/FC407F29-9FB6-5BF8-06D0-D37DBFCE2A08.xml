@@ -29,6 +29,39 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="addr_id" id="005283C5-265E-F600-6736-8E523D6D5DFF">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:02:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique address identifier (surrogate PK)]]></commentInRDBMS>
+<generatorID>61D76B45-0F1C-9C1D-D617-466AB5A584AA</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<referedAttribute>F533281A-ABD6-4942-A1D3-F27BD25A2528</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guardian_id" id="8ABB8026-5981-B0D7-64E3-3ECA8AB7E4FA">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:26:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for passenger]]></commentInRDBMS>
+<generatorID>9B37FF22-958B-01DA-1846-6F3C5937E92A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>74DF67EE-E798-CB08-029C-E4411D7FCBC6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="36FB0A0C-92BB-6EEB-2638-4B6BAB8C8827" name="PASSENGER PK">

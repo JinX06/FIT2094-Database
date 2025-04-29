@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="port_id_fk" directorySegmentName="seg_0" id="72FFDF41-DAF9-8161-EFA2-06498DA56835">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-29 13:16:46 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+</engineerTo>
+<sourcePk>CA2127C1-296B-2B14-6172-E29F0883BF26</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>stop_at</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>87F743FA-0C2E-94DF-85CB-851D6073225D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>26C35C02-8941-E4D3-36C4-F2A22006FF27</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
