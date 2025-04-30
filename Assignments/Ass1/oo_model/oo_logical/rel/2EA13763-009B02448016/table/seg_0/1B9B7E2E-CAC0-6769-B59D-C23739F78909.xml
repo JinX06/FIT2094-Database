@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94D7943F-6709-23D0-4956-D9FA3446B8FD" name="COUNTRY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B9B7E2E-CAC0-6769-B59D-C23739F78909" name="COUNTRY">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>4BFFE6DD-5FD2-96E7-4083-9D000087B1A5</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="country_id" id="AE12042D-620C-BD99-BA65-8FD8AE2A54AE">
+<Column name="country_id" id="7E682AC9-4664-D0A9-926D-F883B8B22C0C">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique country identifier]]></commentInRDBMS>
 <generatorID>5200FC83-0B7F-CE65-475A-FCE6977312CE</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="country_name" id="E5E87FC8-F6C9-91C3-3CBB-3F44D63F3BEF">
+<Column name="country_name" id="93848133-C354-F735-B99C-C91791422C74">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Full name of the country]]></commentInRDBMS>
 <generatorID>13B99E00-34C8-A5AF-C4A0-D19B8B581DAF</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -36,16 +36,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3D11A910-22AF-7C96-C4FD-4C54EF30CB61" name="COUNTRY_PK">
+<ind_PK_UK id="C0E81A74-1573-5403-5B90-EBA85B9B66CF" name="COUNTRY_PK">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>7EB83CB1-FC6C-8954-69AF-24B7B71C9F6F</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="AE12042D-620C-BD99-BA65-8FD8AE2A54AE"/>
+<colUsage columnID="7E682AC9-4664-D0A9-926D-F883B8B22C0C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

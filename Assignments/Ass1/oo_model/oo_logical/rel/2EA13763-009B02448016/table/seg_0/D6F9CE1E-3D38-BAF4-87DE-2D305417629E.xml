@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D5D1307-38C0-00C8-08BC-2FFF610FA452" name="CRUISE_ITINERARY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6F9CE1E-3D38-BAF4-87DE-2D305417629E" name="CRUISE_ITINERARY">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>26C35C02-8941-E4D3-36C4-F2A22006FF27</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ci_datetime" id="D2EF3B5B-F135-928E-B838-FF227285886F">
+<Column name="ci_datetime" id="955A75EF-6CED-3255-D2C7-497C6306F6C5">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Cruise itinerary date time (candidate key)]]></commentInRDBMS>
 <generatorID>D6AF3494-B527-4904-7DD2-3AFB9D30138F</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cruise_id" id="0553ABBC-9F12-6291-7815-C546BBC76A49">
+<Column name="cruise_id" id="35F3344F-DC1D-2CA7-E3AF-807E9B7506FE">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique cruise identifier]]></commentInRDBMS>
 <generatorID>19FC06ED-032F-32E9-5190-8262F2B4E16C</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -34,12 +34,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="340EA095-A03F-C5C7-E8E7-EB0934476D7E" referredColumn="6EEA20C2-D590-69C6-FEEF-E53A2D27C1F3"/>
+<colAssociation fkAssociation="064746AD-CCFE-8CF1-CB89-13F482ED6C3E" referredColumn="4867A959-244B-EDE1-8A73-1E055C17FB02"/>
 </associations>
 </Column>
-<Column name="port_id" id="4F38D2AE-4E0D-BA39-A2F4-7DDD65A22E66">
+<Column name="port_id" id="07FE7625-C310-0F2E-DA39-B1D4B57D58EB">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <comment><![CDATA[Unique identifier for ports]]></comment>
 <commentInRDBMS><![CDATA[Unique port identifier]]></commentInRDBMS>
 <generatorID>75D348DF-56D1-EB00-4B22-CBF6D9D3E7EA</generatorID>
@@ -52,12 +52,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="25708F3C-9945-F5AD-7D19-D30CD9DEE7E3" referredColumn="8C789534-419F-7A63-3CC6-3DAB041F5EA9"/>
+<colAssociation fkAssociation="B18247C4-8D1A-8918-B574-D8190AF92168" referredColumn="0433C7F3-0692-C8E1-FEBA-A1D17F2BA2BD"/>
 </associations>
 </Column>
-<Column name="ci_departure_arrival" id="D44774FD-0E16-3A85-1D28-07C5EF869D60">
+<Column name="ci_departure_arrival" id="1BDC89F6-EE01-1BBC-6EDC-0B84A1D7BEDA">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Indicated whether Depart (D) or Arrive (A)]]></commentInRDBMS>
 <generatorID>871327F8-D98F-9D51-A723-8976315FDBD4</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -74,39 +74,39 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7BBC886F-8046-CF76-D95A-5C617781C35E" name="CRUISE_ITINERARY_PK">
+<ind_PK_UK id="4904796D-290B-E465-8C9E-0FB4F3385688" name="CRUISE_ITINERARY_PK">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>961A5E4D-BBE7-E093-8B2B-66E89012ED6D</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D2EF3B5B-F135-928E-B838-FF227285886F"/>
-<colUsage columnID="0553ABBC-9F12-6291-7815-C546BBC76A49"/>
+<colUsage columnID="955A75EF-6CED-3255-D2C7-497C6306F6C5"/>
+<colUsage columnID="35F3344F-DC1D-2CA7-E3AF-807E9B7506FE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A16EC526-9552-3A24-167E-D245BA51806A" name="cruise_id_fkv1">
+<ind_PK_UK id="C5213DA3-0EC5-558A-BB98-59FAA50955BF" name="cruise_id_cruise_itinerary_fk">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>F56A4FD3-7C48-0C9E-1192-D6B67D0633B1</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0553ABBC-9F12-6291-7815-C546BBC76A49"/>
+<colUsage columnID="35F3344F-DC1D-2CA7-E3AF-807E9B7506FE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4288E0DB-2F6E-2B0B-7837-2F422B02C2F7" name="port_id_fk">
+<ind_PK_UK id="D09A4551-7A00-22C8-1521-24C699B5A302" name="port_id_fk">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>72FFDF41-DAF9-8161-EFA2-06498DA56835</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F38D2AE-4E0D-BA39-A2F4-7DDD65A22E66"/>
+<colUsage columnID="07FE7625-C310-0F2E-DA39-B1D4B57D58EB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

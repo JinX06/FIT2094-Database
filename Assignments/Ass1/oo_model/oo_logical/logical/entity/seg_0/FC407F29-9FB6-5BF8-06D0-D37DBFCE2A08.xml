@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pass_first_name" id="A9A94AC9-65BE-91E6-4DF1-8A9532DE3A93">
 <createdBy>jinx</createdBy>
@@ -120,7 +120,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pass_phone" id="852B364B-B439-494B-9379-A5A75E88E1F2">
 <createdBy>jinx</createdBy>
@@ -130,6 +130,7 @@
 <engineerTo>
 <item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
 </engineerTo>
+<constraintName>chk_phonenumber</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

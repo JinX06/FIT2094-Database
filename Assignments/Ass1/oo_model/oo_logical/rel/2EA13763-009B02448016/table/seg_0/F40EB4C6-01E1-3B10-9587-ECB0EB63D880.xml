@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0CE5EE59-737F-8B0D-079C-A5189E10BCD9" name="SHIP">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F40EB4C6-01E1-3B10-9587-ECB0EB63D880" name="SHIP">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>9DD514B7-20BE-9218-13E7-918BA6CD017C</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ship_id" id="F1E1DD0B-1ACE-909D-E339-AEC4E33B52F1">
+<Column name="ship_id" id="49CBA6E8-482F-853C-BD0D-3CFE194D38EB">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Ship unique identifier]]></commentInRDBMS>
 <generatorID>22118D1E-674F-8E2B-95A0-633B3F8D78AD</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="op_id" id="F1DA0CFD-7872-3DA9-49CA-73EA710E3D68">
+<Column name="op_id" id="42A1226E-B830-9E52-71E0-0570DBA66E60">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique ID for each Operator]]></commentInRDBMS>
 <generatorID>510F6A64-0AC3-5AB1-555F-CB77A7E401D5</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -35,12 +35,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8AE6D831-66F3-29D6-F22F-FEE0EB67C05E" referredColumn="EC10FDA7-9BA8-BA1F-AE82-01A33210190E"/>
+<colAssociation fkAssociation="9A034E72-835B-79F0-4766-4C1B7D9FAD4F" referredColumn="98256A4C-4330-435D-7DE1-56198F6576D2"/>
 </associations>
 </Column>
-<Column name="ship_name" id="808DE553-70A4-2D56-92DC-CC9AB4491BC2">
+<Column name="ship_name" id="1DB90AC3-014C-2720-C82A-FB6FE0014445">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Full name of the ship]]></commentInRDBMS>
 <generatorID>075CF3B3-BD0A-79AE-0FF7-CE7080831832</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -51,9 +51,9 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ship_commissioned_date" id="A338BE48-FDD9-EB96-A164-AFA68E4C6D4D">
+<Column name="ship_commissioned_date" id="B3B7AA44-5258-3FC7-ACB0-60EBA06648DF">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date the ship was commisioned]]></commentInRDBMS>
 <generatorID>4870EC6D-2101-F1F1-E7EB-EC6AE8570979</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -63,9 +63,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ship_tonnage" id="612EE452-EE84-9251-17D5-C956765235FE">
+<Column name="ship_tonnage" id="7DA386CF-A69B-5ADE-2583-3B9502FCF883">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Total tonnage of the ship]]></commentInRDBMS>
 <generatorID>DF40D23A-92CC-78CF-561F-C42048CB69E1</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -77,9 +77,9 @@
 <ownDataTypeParameters>,9,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ship_max_capacity" id="086589D8-5FC2-4EE8-695D-7F75A90C696A">
+<Column name="ship_max_capacity" id="5732A9EC-504E-A41B-17A2-85A4742B9E90">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Maximum number of guests on the ship]]></commentInRDBMS>
 <generatorID>0A35DB15-EFBD-57D3-3FC4-5A8D5535EFAE</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -90,9 +90,9 @@
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ship_registered_country" id="B17A1296-A75B-E37C-D8DD-1A943F2655E8">
+<Column name="ship_registered_country" id="63AC90B3-8971-B668-5AA5-3E05ADABEF1B">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Country where the ship is registered in]]></commentInRDBMS>
 <generatorID>0A5F8ADD-6AF5-9110-D847-F63A04FF14F8</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -105,27 +105,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7E63CD9F-003A-F165-B297-FF3AC871A566" name="SHIP_PK">
+<ind_PK_UK id="0A82F8C1-559D-F210-C02B-2A6C01A87D08" name="SHIP_PK">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>ECE3A720-9208-1DCE-0ED5-5123C2144F4C</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1E1DD0B-1ACE-909D-E339-AEC4E33B52F1"/>
+<colUsage columnID="49CBA6E8-482F-853C-BD0D-3CFE194D38EB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="71844466-26B4-D9B4-28CB-547B993478C2" name="operator_ship_fk">
+<ind_PK_UK id="D98EAB71-D306-5F2B-17A0-462720EDF506" name="operator_ship_fk">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<createdTime>2025-04-30 04:57:20 UTC</createdTime>
 <generatorID>6E7D52A1-CF19-6261-1E93-BCBD01131AE0</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1DA0CFD-7872-3DA9-49CA-73EA710E3D68"/>
+<colUsage columnID="42A1226E-B830-9E52-71E0-0570DBA66E60"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
