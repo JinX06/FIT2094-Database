@@ -29,9 +29,9 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="addr_id" id="005283C5-265E-F600-6736-8E523D6D5DFF">
+<Attribute name="addr_id" id="E22CC1FB-AD65-69C9-D40E-8488CBAD70FA">
 <createdBy>jinx</createdBy>
-<createdTime>2025-04-29 13:02:19 UTC</createdTime>
+<createdTime>2025-04-29 22:50:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique address identifier (surrogate PK)]]></commentInRDBMS>
 <generatorID>61D76B45-0F1C-9C1D-D617-466AB5A584AA</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pass_first_name" id="A9A94AC9-65BE-91E6-4DF1-8A9532DE3A93">
 <createdBy>jinx</createdBy>
@@ -105,7 +105,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="guardian_pass_id" id="8ABB8026-5981-B0D7-64E3-3ECA8AB7E4FA">
+<Attribute name="guardian_id" id="8ABB8026-5981-B0D7-64E3-3ECA8AB7E4FA">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-29 13:26:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique identifier for passenger]]></commentInRDBMS>
@@ -143,8 +143,9 @@
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:16:06 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

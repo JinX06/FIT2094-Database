@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF1FEB8C-0A98-DE00-1379-4335FA5F5AA0" name="ADDRESS">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<generatorID>A9DF12D3-71BB-EDF8-58A0-7D5B7D524FDF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="addr_id" id="8B56716B-BFFF-8C5A-6BD8-5D0CDD7C0ABD">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique address identifier (surrogate PK)]]></commentInRDBMS>
+<generatorID>F533281A-ABD6-4942-A1D3-F27BD25A2528</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_street" id="015B6448-06A5-238C-8DC8-2B5BD3A40D92">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street address]]></commentInRDBMS>
+<generatorID>C3476817-C14E-E878-3175-CB0C86CFF6A5</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_town" id="F2A395D6-556A-0759-2AB0-F1E16B668A02">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Town or suburb]]></commentInRDBMS>
+<generatorID>F24BB623-3068-6FD6-5CB5-091D4C9117E3</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_postcode" id="395762EE-7F5B-BBC6-035C-EE32A79E29BF">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code]]></commentInRDBMS>
+<generatorID>5AB75470-F163-4B38-83B4-A562CC55B314</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_country" id="BBEB072B-A69F-2B1E-AD46-6B99B5DA4B87">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country name]]></commentInRDBMS>
+<generatorID>1CC12EDF-1FE4-DDB1-E609-5493E24B9DE1</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A3E7DD3-C4A3-6FE2-0ED4-E07C572F2770" name="ADDRESS_PK">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<generatorID>C9B0E238-80CC-E52A-AB6D-F41BCEA5EAEC</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B56716B-BFFF-8C5A-6BD8-5D0CDD7C0ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92CBB80E-6DB1-59A7-5D46-90C8DD2A8B7B" name="address_unique_key">
+<createdBy>jinx</createdBy>
+<createdTime>2025-04-30 00:44:03 UTC</createdTime>
+<generatorID>3B3F0F0A-AEF4-E937-8982-7A246BDF5A6B</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBEB072B-A69F-2B1E-AD46-6B99B5DA4B87"/>
+<colUsage columnID="015B6448-06A5-238C-8DC8-2B5BD3A40D92"/>
+<colUsage columnID="F2A395D6-556A-0759-2AB0-F1E16B668A02"/>
+<colUsage columnID="395762EE-7F5B-BBC6-035C-EE32A79E29BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

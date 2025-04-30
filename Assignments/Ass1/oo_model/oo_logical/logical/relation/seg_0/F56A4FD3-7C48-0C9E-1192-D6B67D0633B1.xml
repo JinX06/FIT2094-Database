@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cruise_id_fkv1" directorySegmentName="seg_0" id="F56A4FD3-7C48-0C9E-1192-D6B67D0633B1">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cruise_id_cruise_itinerary_fk" directorySegmentName="seg_0" id="F56A4FD3-7C48-0C9E-1192-D6B67D0633B1">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-29 13:11:37 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ship_if_fk" directorySegmentName="seg_0" id="C6E07F85-54E7-02C3-2396-1F737282681E">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ship_id_cabin_fk" directorySegmentName="seg_0" id="C6E07F85-54E7-02C3-2396-1F737282681E">
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-29 12:51:05 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>

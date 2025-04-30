@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ship_name" id="075CF3B3-BD0A-79AE-0FF7-CE7080831832">
 <createdBy>jinx</createdBy>
@@ -121,8 +121,9 @@
 <createdBy>jinx</createdBy>
 <createdTime>2025-04-28 22:05:27 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="true"/>
+<item key="2EA13763-5447-2F61-A6E8-009B02448016" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
