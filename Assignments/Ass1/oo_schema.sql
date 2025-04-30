@@ -3,11 +3,6 @@
 --   site:      Oracle Database 12c
 --   type:      Oracle Database 12c
 
-set echo on
-SPOOL oo_schema_output.txt
---student id: 34076352
---student name: Ong Jin Xiang
-
 DROP TABLE ADDRESS CASCADE CONSTRAINTS 
 ;
 
@@ -504,6 +499,3 @@ ALTER TABLE CRUISE
 -- 
 -- ERRORS                                   0
 -- WARNINGS                                 0
-
-SPOOL off
-set echo off
