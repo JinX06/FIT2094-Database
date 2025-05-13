@@ -60,12 +60,40 @@ ORDER BY STUID, UNITCODE;
 /* Part B - Retrieving data from multiple tables */
 
 -- B1
+SELECT unitcode, ofsemester, stafffname, stafflname
+FROM uni.offering join uni.STAFF
+ON uni.offering.staffid = uni.staff.staffid
+WHERE to_char(ofyear, 'yyyy') = '2021'
+ORDER BY ofsemester, unitcode;
+
+SELECT unitcode, ofsemester, stafffname, stafflname
+FROM uni.offering o join uni.staff s
+ON o.staffid = s.staffid
+WHERE to_char(ofyear, 'yyyy') = '2021';
+
+SELECT unitcode, ofsemester, stafffname, stafflname
+FROM uni.offering join uni.staff
+USING(staffid)
+WHERE to_char(ofyear, 'yyyy') = '2021'
+ORDER BY ofsemester, unitcode;
+
+SELECT unitcode, ofsemester stafffname, stafflname
+FROM uni.offering natural join uni.staff
+WHERE to_char(ofyear, 'yyyy') = '2021'
+ORDER BY ofsemester, unitcode;
 
 
 -- B2
 
 
 -- B3
+SELECT stuid, stufname || ' ' || stulname as "student name", unitname
+FROM uni.student
+JOIN uni.enrolment USING(stuid)
+JOIN uni.unit USING(unitcode)
+WHERE ofsemester = 1
+AND to_char(ofyear, 'yyyy') = '2021'
+ORDER BY unitname, stuid;
 
 
 -- B4
@@ -75,7 +103,16 @@ ORDER BY STUID, UNITCODE;
 
 
 -- B6
-
+SELECT unitcode, unitname, ofsemester, 
+to_char(ofyear, 'yyyy') as year, 
+NVL(to_char(enrolmark, '990'), 'N/A') as mark, 
+NVL(enrolgrade, 'N/A') as grade
+FROM uni.unit
+JOIN uni.enrolment USING(unitcode)
+JOIN uni.student USING(stuid)
+WHERE upper(stufname) = upper('Brier')
+AND upper(stulname) = upper('Kilgour')
+ORDER BY year, ofsemester, unitcode;
 
 -- B7
 
