@@ -39,18 +39,37 @@ ORDER BY year, ofsemester, unitcode;
 --3
 -- 3. Find the total number of prerequisite units for all units. Include in the list the unit code of units that do not have a prerequisite. Order the list in descending order of the number of prerequisite units and where several units have the same number of prerequisites order then by unit code.
 
+
+
+
 --4
 -- 4. Display the unit code and unit name for units that do not have a prerequisite. Order the list by unit code. There are many approaches that you can take in writing an SQL statement to answer this query. You can use the SET OPERATORS, OUTER JOIN and a SUBQUERY. Write SQL statements based on all three approaches. 
 
 /* Using outer join */
-
+SELECT unitcode, unitname
+FROM uni.PREREQ right join uni.unit using(unitcode)
+GROUP BY unitcode, unitname
+HAVING count(prerequnitcode) = 0
+ORDER BY unitcode;
 
 
 /* Using set operator MINUS */
-
+SELECT unicode, unitname
+FROM uni.unit
+minus
+SELECT unitcode, unitname
+FROM uni.unit join uni.prereq using(unitcode)
+ORDER BY unitcode;
 
 
 /* Using subquery */
+SELECT unitcode, unitname
+FROM uni.unit
+WHERE unitcode not in (
+    SELECT unitcode from uni.prereq
+)
+ORDER BY unicode;
+
 
 
 
@@ -68,16 +87,36 @@ ORDER BY year, ofsemester, unitcode;
 
 --8
 -- 8. Given that the payment rate for a tutorial is $42.85 per hour and the payment rate for a lecture is $75.60 per hour, calculate the weekly payment per type of class for each staff member in semester 1 2020. In the display, include staff id, staff name, type of class (lecture - L or tutorial - T), number of classes, number of hours (total duration), and weekly payment (number of hours * payment rate). The weekly payment must be displayed to two decimal points and right aligned. Order the list by the staff id and for a given staff id by the type of class.
+SELECT staffid, stafffname || ' ' || stafflname as staffname,
+'Lecture' as Type,
+count(unitcode) as no_of_classes,
+sum(clduration) as total_hours,
+LPAD(to_char(sum(clduration) * 75.6, '$999.00'), 16, ' ') as weekly_payment
+FROM uni.schedclass
+JOIN uni.staff using(staffid)
+WHERE upper(cltype) = 'L'
+AND ofsemester = 1
+AND to_char(ofyear, 'yyyy') = '2020'
+GROUP BY staffid, stafffname || ' ' || stafflname
+union
+SELECT staffid, stafffname || ' ' || stafflname as staffname,
+'Tutorial' as Type,
+count(unitcode) as no_of_classes,
+sum(clduration) as total_hours,
+LPAD(to_char(sum(clduration) * 42.85, '$999.00'), 16, ' ') as weekly_payment
+FROM uni.schedclass
+JOIN uni.staff using(staffid)
+WHERE upper(cltype) = 'T'
+AND ofsemester = 1
+AND to_char(ofyear, 'yyyy') = '2020'
+GROUP BY staffid, stafffname || ' ' || stafflname
+ORDER BY staffid, type;
 
-    
 --9
 -- 9. Given that the payment rate for a tutorial is $42.85 per hour and the payment rate for a lecture is $75.60 per hour, calculate the total weekly payment (the sum of both tutorial and lecture payments) for each staff member in semester 1 2020. In the display, include staff id, staff name, total weekly payment for tutorials, total weekly payment for lectures and the total weekly payment as a single line of output. If the payment is null, show it as $0.00. The tutorial payment, lecture payment and total weekly payment must be displayed to two decimal points and right aligned. Order the list by the staff id.
-
     
 --10
 -- 10. Assume that all units are worth 6 credit points each, calculate each student’s Weighted Average Mark (WAM) and GPA. Please refer to these Monash websites: https://www.monash.edu/exams/results/wam and https://www.monash.edu/exams/results/gpa for more information about WAM and GPA respectively. Do not include NULL, WH or DEF grade in the calculation.
-
-
 
 
 
