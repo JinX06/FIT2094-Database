@@ -6,8 +6,7 @@
 
 /* Comments for your marker:
 
-
-
+I ackowledge the use of ChatGPT (https://chat.openai.com/) to generate the sample test data as permitted by this assignment. The output was modified to fit the requirements of the assignment.
 
 */
 
