@@ -1,8 +1,8 @@
 /*****PLEASE ENTER YOUR DETAILS BELOW*****/
 --T1-rm-schema.sql
 
---Student ID:
---Student Name:
+--Student ID: 34076352
+--Student Name: Ong Jin Xiang
 
 /* Comments for your marker:
 

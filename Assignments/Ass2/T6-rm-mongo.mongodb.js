@@ -1,8 +1,8 @@
 // *****PLEASE ENTER YOUR DETAILS BELOW*****
 // T6-rm-mongo.mongodb.js
 
-// Student ID:
-// Student Name:
+// Student ID: 34076352
+// Student Name: Ong Jin Xiang
 
 // Comments for your marker:
 
@@ -13,7 +13,7 @@
 // Use (connect to) your database - you MUST update xyz001
 // with your authcate username
 
-use("xyz001");
+use("jong0092");
 
 // (b)
 // PLEASE PLACE REQUIRED MONGODB COMMAND TO CREATE THE COLLECTION HERE
