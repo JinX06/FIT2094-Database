@@ -182,3 +182,112 @@ INSERT INTO competitor (
 ) VALUES (15, 'Olivia', 'Bennett', 'F', TO_DATE('21/MAY/2003','DD/MON/YYYY'), 'olivia.bennett@monash.edu', 'Y', '0400000015');
 
 
+-- ============================================================================================================================================
+-- ENTRY 
+-- The first 5 entries ("team leaders") are inserted with NULL team_id first to satisfy the FK (event_id,entry_no) reference when creating the TEAM rows. and their team_ids will be updated later.
+-- The other entries will be inserted after the TEAM rows are created.
+-- ============================================================================================================================================
+
+-- Entry for "Speed Demons" team for Event 2
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    entry_starttime,
+    entry_finishtime,
+    entry_elapsedtime,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (2,1,TO_DATE('08:31:00','hh24:mi:ss'),TO_DATE('09:25:00','hh24:mi:ss'), TO_DATE('00:54:00','hh24:mi:ss'),1,NULL,1);
+
+-- Entry for "Flying Foxes" team for Event 4
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    entry_starttime,
+    entry_finishtime,
+    entry_elapsedtime,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (4,1,TO_DATE('08:31:00','hh24:mi:ss'),TO_DATE('09:20:00','hh24:mi:ss'), TO_DATE('00:49:00','hh24:mi:ss'),4,NULL,2);       
+
+-- Entry for "Speed Demons" team for Event 8 ("At least one team name used in two different carnivals")
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    entry_starttime,
+    entry_finishtime,
+    entry_elapsedtime,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (8,1,TO_DATE('08:01:00','hh24:mi:ss'),TO_DATE('09:00:00','hh24:mi:ss'), TO_DATE('00:59:00','hh24:mi:ss'),1,NULL,1);
+
+-- Entry for "Trail Blazers" team for Event 7
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    entry_starttime,
+    entry_finishtime,
+    entry_elapsedtime,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (7,1,TO_DATE('08:30:00','hh24:mi:ss'),TO_DATE('09:05:00','hh24:mi:ss'), TO_DATE('00:35:00','hh24:mi:ss'),7,NULL,3);
+
+-- Entry for "Night Owls" team for Event 12
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    entry_starttime,
+    entry_finishtime,
+    entry_elapsedtime,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (12,1,TO_DATE('08:45:00','hh24:mi:ss'),TO_DATE('09:25:00','hh24:mi:ss'), TO_DATE('00:40:00','hh24:mi:ss'),9,NULL,2);
+
+-- ============================================================================================================================================
+-- TEAM 
+-- ============================================================================================================================================
+INSERT INTO team (
+    team_id,
+    team_name,
+    carn_date,
+    event_id,
+    entry_no
+) VALUES (1,'Speed Demons', TO_DATE('22/SEP/2024','DD/MON/YYYY'), 2,1);
+
+INSERT INTO team (
+    team_id,
+    team_name,
+    carn_date,
+    event_id,
+    entry_no
+) VALUES (2,'Flying Foxes', TO_DATE('05/OCT/2024','DD/MON/YYYY'), 4,1);
+
+INSERT INTO team (
+    team_id,
+    team_name,
+    carn_date,
+    event_id,
+    entry_no
+) VALUES (3,'Speed Demons', TO_DATE('02/FEB/2025','DD/MON/YYYY'), 8,1); -- team name reused
+
+INSERT INTO team (
+    team_id,
+    team_name,
+    carn_date,
+    event_id,
+    entry_no
+) VALUES (4,'Trail Blazers', TO_DATE('02/FEB/2025','DD/MON/YYYY'), 7,1);
+
+INSERT INTO team (
+    team_id,
+    team_name,
+    carn_date,
+    event_id,
+    entry_no
+) VALUES (5,'Night Owls', TO_DATE('29/JUN/2025','DD/MON/YYYY'),12,1);
+
