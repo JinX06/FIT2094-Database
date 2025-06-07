@@ -192,3 +192,32 @@ AND event_id = (SELECT event_id
 COMMIT;
 
 --(d)
+
+-- Update every entry for the team 'Super Runners' to have team_id NULL (referential integrity)
+UPDATE entry
+SET team_id = NULL
+WHERE team_id = (SELECT team_id
+    FROM team
+    WHERE UPPER(team_name) = UPPER('Super Runners')
+    AND carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+);
+
+-- Delete the team 'Super Runners' from the team table
+DELETE FROM team
+WHERE team_id =
+   (SELECT team_id
+      FROM team
+     WHERE UPPER(team_name) = UPPER('Super Runners')
+       AND carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY'));
+
+-- Delete Keith Rose's entry from the 10K event
+DELETE FROM entry
+WHERE comp_no = (SELECT comp_no FROM competitor WHERE UPPER(comp_email) = UPPER('keith.rose@monash.edu'))
+AND event_id = (SELECT event_id
+    FROM event
+    WHERE carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+    AND UPPER(eventtype_code) = UPPER('10K')
+    );
+
+-- Preserve Keith Rose in competitor table "... is looking forward to competing in the next 2025 carnival."
+COMMIT;
