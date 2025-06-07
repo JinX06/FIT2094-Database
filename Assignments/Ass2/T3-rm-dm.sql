@@ -18,13 +18,11 @@ DROP SEQUENCE team_seq;
 --(a)
 CREATE SEQUENCE competitor_seq
     START WITH 100
-    INCREMENT BY 5
-    NOCACHE;  -- in case of a crash, the sequence will not lose numbers (have gaps)
+    INCREMENT BY 5;
 
 CREATE SEQUENCE team_seq
     START WITH 100
-    INCREMENT BY 5
-    NOCACHE;
+    INCREMENT BY 5;
 
 --(b)
 INSERT INTO competitor (
@@ -146,5 +144,51 @@ INSERT INTO entry (
 COMMIT;
 --(c)
 
+-- Remove Jackson from the 10K team
+UPDATE entry
+    SET team_id = NULL
+    WHERE comp_no = (SELECT comp_no FROM competitor WHERE UPPER(comp_email) = UPPER('jackson.bull@monash.edu'))
+    AND event_id = (SELECT event_id
+        FROM event
+        WHERE carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+        AND UPPER(eventtype_code) = UPPER('10K'));
+
+-- New 5K individual entry for Jackson
+INSERT INTO entry (
+    event_id,
+    entry_no,
+    comp_no,
+    team_id,
+    char_id
+) VALUES (
+    (SELECT event_id
+    FROM event
+    WHERE carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+    AND UPPER(eventtype_code) = UPPER('5K')),
+    
+    (SELECT NVL(MAX(entry_no),0)+1
+    FROM entry
+    WHERE event_id = (SELECT event_id
+        FROM event
+        WHERE carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+        AND UPPER(eventtype_code) = UPPER('5K'))),
+    
+    (SELECT comp_no FROM competitor WHERE UPPER(comp_email) = UPPER('jackson.bull@monash.edu')),
+    
+    NULL,
+    
+    (SELECT char_id FROM charity WHERE UPPER(char_name) = UPPER('Beyond Blue'))
+);
+
+-- Delete Jackson’s old 10K entry
+DELETE FROM entry
+WHERE comp_no = (SELECT comp_no FROM competitor WHERE UPPER(comp_email) = UPPER('jackson.bull@monash.edu'))
+AND event_id = (SELECT event_id
+    FROM event
+    WHERE carn_date = TO_DATE('29/JUN/2025','DD/MON/YYYY')
+    AND UPPER(eventtype_code) = UPPER('10K')
+);
+
+COMMIT;
 
 --(d)
