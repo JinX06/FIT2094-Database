@@ -46,7 +46,10 @@ db.teams.find({});
 // PLEASE PLACE REQUIRED MONGODB COMMAND/S FOR THIS PART HERE
 // ENSURE that your query is formatted and has a semicolon
 // (;) at the end of this answer
-
+db.teams.find(
+    { "team_members.event_type": { "$in": ["5 Km Run", "10 Km Run"] } },
+    { "_id": 0, "carn_date": 1, "carn_name": 1, "team_members.competitor_name": 1, "team_members.competitor_phone": 1 }
+);
 
 
 
@@ -58,7 +61,6 @@ db.teams.find({});
 
 
 // (i) Add new team
-
 
 
 
@@ -76,5 +78,4 @@ db.teams.find({});
 
 
 // Illustrate/confirm changes made
-
 
