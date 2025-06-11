@@ -10,6 +10,7 @@
 
 
 */
+DROP TABLE entry_charity_allocation CASCADE CONSTRAINTS PURGE;
 
 --(a)
 ALTER TABLE competitor ADD comp_completed_events NUMBER(3) DEFAULT 0 NOT NULL;
